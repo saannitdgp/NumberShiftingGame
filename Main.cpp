@@ -52,7 +52,7 @@ void NumberShiftingGame :: create_matrix(){
     for(i=0;i< size ;i++) {
         for(j=0; j< size ; j++) {
        if(rsize >=0){
-         int x=rand()%(rsize+1);
+         int x=rand()%(rsize)+1;
          matrix[i][j]=random_array[x];
          random_array[x]=random_array[rsize];
          rsize--;   
